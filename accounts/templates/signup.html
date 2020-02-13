@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block contents %}
+
+<div class="container">
+    <h1>Sign Up!</h1>
+    <!-- 아무것도 안쓰면 get 방식이야! post로 바꿔줘야해! -->
+    <form method="POST" action="{% url 'signup' %}">
+        {% csrf_token %}
+        Username:
+        <br>
+        <input type="text" name="username">
+        <br>
+        Password:
+        <br>
+        <input type="password" name="password1">
+        <br>
+        Confirm Password:
+        <br>
+        <input type="password" name="password2">
+        <br>
+        <br>
+        <input type="submit" value="Sign Up!" class="btn btn-primary">
+    </form>
+</div>
+{% endblock contents %}
