@@ -60,7 +60,7 @@ simplejson==3.16.0
 six==1.11.0
 sqlparse==0.3.0
 tensorboard==1.14.0
-tensorflow==1.14.0
+tensorflow==2.9.3
 tensorflow-estimator==1.14.0
 termcolor==1.1.0
 twilio==6.35.4
